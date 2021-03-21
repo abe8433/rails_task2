@@ -10,7 +10,6 @@ class UsersController < ApplicationController
   def create
     # Strong Parameter の記述
     User.create(user_params)
-    redirect_to action: :index
   end
 
   def edit
